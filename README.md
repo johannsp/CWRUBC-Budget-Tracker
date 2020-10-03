@@ -2,6 +2,11 @@
 
 Track budget with a web app that will now support offline access
 
+Heroku link:
+https://morning-lake-65156.herokuapp.com/
+
+[![Budget-Tracker-Mongoose-Web-App-preview.png](https://i.postimg.cc/yNyJc6GR/Budget-Tracker-Mongoose-Web-App-preview.png)](https://postimg.cc/WDtbPVTp)
+
 ## Table of Contents
 - [Installation](https://github.com/johannsp/CWRUBC-Budget-Tracker#Installation) 
 - [Usage](https://github.com/johannsp/CWRUBC-Budget-Tracker#Usage) 
@@ -35,11 +40,4 @@ see the LICENSE.md file for details
 ## Contributing
 
 After cloning this repository, push to a custom branch and create a pull request.
-
-## Tests
-
-
-
-## Questions
-
 
