@@ -4,9 +4,14 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "npm run build && node server.js",
+    "start:dev": "concurrently \"npm run server\" \"cd client && npm run start\"",
+    "server": "nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
+    "client": "cd client && npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js",
     "lite-server": "lite-server"
   },
   "repository": {
@@ -14,7 +19,7 @@
     "url": "git+https://github.com/coding-boot-camp/unit18hw.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/coding-boot-camp/unit18hw/issues"
   },
@@ -22,21 +27,17 @@
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
+    "if-env": "^1.0.4",
     "lite-server": "^2.5.3",
     "mongoose": "^5.5.15",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.1.0",
+    "concurrently": "^5.2.0",
     "eslint": "^7.10.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.1.2",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
-    "webpack-pwa-manifest": "^4.2.0"
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.2"
   }
 }
