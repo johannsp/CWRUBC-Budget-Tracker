@@ -21,10 +21,6 @@ https://morning-lake-65156.herokuapp.com/
 Clone this repository and initialize any required Node modules by running
 > npm install
 
-## Usage
-
-
-
 ## License
 
 This project is licensed under the MIT License -
