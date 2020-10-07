@@ -13,8 +13,6 @@ https://morning-lake-65156.herokuapp.com/
 - [License](https://github.com/johannsp/CWRUBC-Budget-Tracker#License) 
 - [Badges](https://github.com/johannsp/CWRUBC-Budget-Tracker#Badges) 
 - [Contributing](https://github.com/johannsp/CWRUBC-Budget-Tracker#Contributing) 
-- [Tests](https://github.com/johannsp/CWRUBC-Budget-Tracker#Tests) 
-- [Questions](https://github.com/johannsp/CWRUBC-Budget-Tracker#Questions) 
 
 ## Installation
 
